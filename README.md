@@ -13,4 +13,4 @@ Impress
 
 ### View the presentation
 
-[impress.js demo](https://github.com/AllanHoejgaardJensen/MobileFirst-SingleApplication/MobileFirstSingleApplication.html )
+[Presentation](https://github.com/AllanHoejgaardJensen/MobileFirst-SingleApplication/MobileFirstSingleApplication.html )
