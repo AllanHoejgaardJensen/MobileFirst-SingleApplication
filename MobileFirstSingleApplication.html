@@ -1,0 +1,346 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=1024" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <title></title>
+
+    <meta name="description" content="Presentation for FinansTECH 2015 about Mobile First-Single Application btw. this is not SEO optimized,
+        this is not exemplary html, the aim is solely to state that a lot can be done in HTML - using styling. The presentation is
+        created in impress.js - a presentation tool based on the power of CSS3 transforms and transitions
+        in modern browsers - by Bartek Szopka @bartazimpress.js inspired by the idea behind prezi.com." />
+    <meta name="author" content="Allan H. Jensen" />
+
+    <link href="http://fonts.googleapis.com/css?family=Open+Sans:regular,semibold,italic,italicsemibold|PT+Sans:400,700,400italic,700italic|PT+Serif:400,700,400italic,700italic" rel="stylesheet" />
+
+    <link href="MobileFirstSingleApplication.css" rel="stylesheet" />
+
+    <link rel="shortcut icon" href="favicon.png" />
+    <link rel="apple-touch-icon" href="apple-touch-icon.png" />
+</head>
+
+<body class="impress-not-supported">
+
+    <div class="fallback-message">
+        <p>Din browser <b>indeholder ikke de features, der er behov for</b> derfor kan du kun se en simpel udgave.</p>
+        <p>Den bedste oplevelse gives af  <b>Chrome</b>, <b>Safari</b> or <b>Firefox</b> browsere.</p>
+    </div>
+
+    <div id="impress">
+
+        <div id="mobile-first-presentation-start" class="step slide" data-x="-1000" data-y="-3500" style="background-color: black">
+            <h1>Mobile First</h1>
+                <q>- Single Application</q>
+            <p>- et princip for udvikling af cross platform applikationer</p>
+            <div class="disclaimer">
+                <p>af Allan Højgaard Jensen<br>
+                <span>Chef Infrastruktur Arkitekt - Nykre<span style="text-decoration: underline">dit</span><br></span>
+                <span>Facilitator for "IT Arkitektur i Praksis" - Dansk IT<br></span>
+                <i>disclaimer på forhånd - !Undskyld til alle designere og grafikere</i>
+            </div>
+        </div>
+
+        <div id="what-is-mobile-first" class="step slide" data-x="0" data-y="-3500">
+            <q><strong>Mobile First</strong> - er <strong> det </strong> at lave:</q>
+            <ul>
+                <li>Native apps?</li>
+                <li>Funktionalitet først leveret til mobilen?</li>
+                <ul>
+                    <li> - f.eks. først laves iPhone, iPad, så Android, så Android, så ...</li>
+                    <li> - og derefter laves en browser udgave til web brugerne</li>
+                </ul>
+                <li>Lave web og så lave mobil?</li>
+                <li>Lave tablet og så lave mobil?</li>
+
+            </ul>
+        </div>
+
+        <div id="now-i-understand-mobile-first" class="step slide" data-x="1000" data-y="-3500">
+            <q>Aaahaa - det er <strong>Mobile First</strong></q>
+            <ul style="padding-left: 3em;padding-top: 1em">
+                <li><span>NIX!</span> Det er et design princip!</li>
+                <li style="font-size: smaller"> - med store implikationer for:
+                    <ul style="padding-left: 2em">
+                        <li>- brugerne / kunderne</li>
+                        <li>- partnere / ansatte</li>
+                        <li>- udviklere / analytikere</li>
+                    </ul>
+                </li>
+                <li style="font-size: smaller"> - og en enorm fokus på det nødvendige</li>
+            </ul>
+        </div>
+
+        <div id="u-tell-me-im-not-mobile-first" class="step slide" data-x="2000" data-y="-3500">
+            <q>Bruges  <strong>Mobile First</strong> principperne,  - når  <b> vi/I </b> laver applikationer?</q>
+            <ul style="padding-left: 3em;padding-top: 1em">
+                <li>genkender man følgende:</li>
+                <ul style="padding-left: 1em;padding-top: 1em">
+                    <li style="font-size: smaller"> - ofte startes med Desktop eller Tablet design</li>
+                    <li style="font-size: smaller"> - og derefter afledes mobil udgaver</li>
+                    <li style="font-size: smaller"> - eller helt separat mobiludgave laves </li>
+                </ul>
+                <li style="padding-top: 1em">er svaret at der ikke anvendes Mobile First</li>
+                <li style="padding-top: 1em;color: gray"><b>..... lad os lige gå tilbage til begyndelsen....</b></li>
+            </ul>
+        </div>
+
+
+        <div id="in-the-beginning-was-apps" class="step" data-x="0" data-y="-2000" data-scale="4">
+            <span class="under-over-header">I begyndelsen ... var kun </span>
+            <h1>Apps</h1>
+            <span class="footnote">på få platforme.....</span>
+        </div>
+
+        <div id="still-in-the-beginning" class="step" data-x="150" data-y="800" data-rotate="90" data-scale="5">
+            <p>dvs. <strong>få dimser</strong> på <strong>få platforme</strong> <br/>
+            så kom flere <span>versioner og dimser</span> <br/>
+            og så <strong>kom der endnu flere dimser og versioner</strong> af både dimser og OSer.</p>
+            <p style="padding-top: 1em;color: saddlebrown"><span>Nå ja - så er jo stadig Web'en</span></p>
+        </div>
+
+        <div id="over-time" class="step" data-x="3500" data-y="2100" data-rotate="180" data-scale="6">
+            <p>Over <b>tid</b> <span class="thoughts">betød det</span></p>
+        </div>
+
+        <div id="over-time-we-need-more" class="step" data-x="2825" data-y="2325" data-z="-3000" data-rotate="300" data-scale="1">
+            <img alt="circled arrow from http://icons.mysitemyway.com" src="006774-3d-transparent-glass-icon-arrows-circled-arrow-up-sc44.png"/>
+            <h1>stigende:</h1>
+            <ul>
+                <li>kompetencebehov</li>
+                <li>kompleksitet <i>og</i> </li>
+                <li>omkostninger</li>
+            </ul>
+            <p>so what to do ?</p>
+        </div>
+
+        <div id="functionality-across-devices" class="step" data-x="3500" data-y="-850" data-rotate="270" data-scale="6">
+            <p>kunne funktionalitet <b class="positioning">implementeres</b> på <b class="rotating">tværs</b> af
+                <b class="upscaling">store</b> og <b class="scaling">små</b> dimser?</p>
+        </div>
+
+        <div id="html5-is-the-answer" class="step" data-x="6700" data-y="-500" data-scale="6">
+            <h1 class="upscaling">HTML5</h1>
+            <p>-  er svaret på <br> <b class="everything">det Hele!</b></p>
+            <p><audio src="genialt.mp3" preload="auto" controls title="det er genialt det der fra DRs hjemmeside"/></p>
+            <h2>DT genialt! DT DR </h2>
+
+        </div>
+
+        <div id="html5-is-the-answer-to-every-question" class="step" data-x="6300" data-y="2000" data-rotate="20" data-scale="4">
+            <p>så ... vi dropper native applikationer og laver ...</p>
+            <q>HTML5</q>
+        </div>
+
+        <div id="stooop" class="step" data-x="6000" data-y="3600" data-z="0" data-scale="2">
+            <h1>  STOOOOOOOP!!!</h1>
+            <img alt="stop sign from http://ihttp://www.iconarchive.com/" src="Kyo-Tux-Phuzion-Sign-Stop.png"/>
+        </div>
+
+        <div id="we-still-need-apps-in-special-cases" class="step" data-x="6200" data-y="4600" data-z="-100" data-rotate-x="-40" data-rotate-y="10" data-scale="2">
+            <p><span class="there">der</span> <span class="are"><b>er</b></span> <span class="situations">situationer</span> hvor
+                <span class="native-apps"><b><i>native apps</i></b></span> <span class="makes">giver</span> <b>God Mening<sup>*</sup></b></p>
+            <span style="padding-top: 1em" class="footnote"><sub>*</sub> især der,
+                <p style="font-size: smaller;padding-left: 2em">hvor kompleksiteten og økonomien står mål med gevinsten...
+                    hvor netop applikationen <strong>er</strong> selve produktet...
+                <strong style="padding-top: 1em"> netop DER er det helt fint!</strong></p>
+            </span>
+        </div>
+
+        <div id="the-rest-in-html5" class="step" data-x="3500" data-y="7000" data-rotate="270" data-scale="6">
+            <p>men kan <b>resten</b> <span class="make-html5">så laves i</span></p>
+            <h1>HTML5?</h1>
+        </div>
+
+        <div id="investigations" class="step" data-x="3800" data-y="6900" data-z="-3000" data-rotate="90" data-scale="1">
+            <h1>...kinda</h1>
+            <p style="color:midnightblue">Undersøgelser viser at f.eks. netbankens funktionalitet <br> er meget vigtigt for brugeres dvs. kunders valg af bank...</p>
+        </div>
+
+        <div id="functionality-over-technology" class="step" data-x="1000" data-y="5500" data-z="-6000" data-rotate="-60" data-scale="2">
+            så det er netop <span>funktionalitet og brugervenlighed...</span>
+            <p>mere end teknologien bag funktionaliteten....</p>
+            <h2>meeen....</h2>
+        </div>
+
+        <div id="facebook-html5" class="step" data-x="550" data-y="6200" data-z="-6200" data-rotate="65" data-scale="3">
+            <img src="fb.gif"/><p style="padding-top: 1em;color: saddlebrown">var der ikke noget med  <b>Facebook og HTML5</b></p>
+        </div>
+
+        <div id="facebook-html5-fiasko" class="step" data-x="0" data-y="6000" data-z="-6000" data-scale="4">
+            <span class="under-over-header">det var ... en </span>
+            <h1>FIASKO</h1>
+            <div>
+                <img src="Facebook_thumb_200w.png"/>
+            </div>
+        </div>
+
+        <div id="a-fiasko-for-the-model" class="step" data-x="-1750" data-y="6500" data-z="-7200" data-rotate="165" data-scale="2">
+            <p style="padding-top: 1em;color: saddlebrown">Facebook er  ..... <b>user til user</b> </p>
+            <p> - en community orienteret model</p>
+            <p style="padding-top: 1em;padding-left: 2em"> - meget er sket på HTML5 siden...</p>
+            <p style="padding-top: 2em;font-stretch: extra-expanded;text-align:center;font-weight: bold">:-)</p>
+        </div>
+
+        <div id="problem-solved-or-not-entirely" class="step" data-x="-1750" data-y="5200" data-z="-4200" data-rotate="117" data-scale="6">
+            <h1>HTML5 & omtanke!</h1>
+            <p>man kan stadigt lave meget komplicerede applikationer, tilpasset den enkelte dims, platform og browser
+                således man i realiteten har “mange applikationer i en og samme kildekode” ....
+                og det betyder at omkostninger, kompleksiteten ikke er reduceret til det mulige....</p>
+            <h2 style="text-align: center">"Mobile First - Single Application"   <br>- bliver derfor interessant</h2>
+        </div>
+
+        <div id="mobile-first-single-application-and-cross-platform" class="step" data-x="1750" data-y="10000" data-z="-8000" data-rotate="117" data-scale="1">
+            <h1>Mobile First -> Single Applikation</h1>
+            <p>det handler om at gå hårdt efter fuld funktionalitet på smartphones,
+                og det skal give en god og genkendelig oplevelse på alle dimser,
+                dvs. lille visuelt område - betjent med en tommelfinger</p>
+            <p>få det til at fungere på tværs af dimser og platforme...</p>
+            <h2>Mobile First - Single Application - Cross platform</h2>
+            <h3>-> 1 applikation på tværs af af alle dimser</h3>
+        </div>
+
+        <div id="mobile-first-single-application-and-cross-platform-advantage" class="step" data-x="2080"
+             data-y="11500" data-z="-8000" data-rotate="-14" data-scale="1">
+        <h1>Fordele</h1>
+        <p>Man skal komme helt ind til kernen af hvad der er nødvendigt at levere til brugerne for at de føler sig
+            "ordentligt" betjent, de kan skifte til den dims der passer dem og stadigt overføre
+            betjeningsintuiteten mellem dimser.</p>
+        <h2>Bruger/Kunde vælger dims/device</h2>
+        <h3>-> til interaktionen med os</h3>
+    </div>
+
+    <div id="mobile-first" class="step slide" data-x="0" data-y="13500">
+        <q>Mobile First</q>
+        <ul>
+            <li>Der skal være noget interessant umiddelbart.</li>
+            <li> Det første man ser, skal kunne fortsættes</li>
+            <ul>
+                <li>funktionalitet skal være lige ved “tomlen” - man vil typisk noget f.eks. checke saldo,
+                    se sidste posteringer, er der gået løn ind, betale... hvis det er banken der er tale om ...
+                </li>
+                <li> Organiseringen skal være ordnet efter kendt behov.... og enkel</li>
+            </ul>
+        </ul>
+    </div>
+
+    <div id="single-application" class="step slide" data-x="1000" data-y="13500">
+        <q>Single Application</q>
+        <ul>
+            <li>man kan tilføje convinience links på dimser med større visuelt område...</li>
+            <li>funktionaliteten er den samme som for smartphone...</li>
+            <li> man kan tilføje tastatur og pointer support således tablets, desktop, superbrugere, skærmlæsere, *SE’ere etc.</li>
+        </ul>
+        <i>*SE: Search Engines</i>
+    </div>
+
+    <div id="customer-choose-interaction-device-and-platform" class="step slide" data-x="2000" data-y="13500">
+        <q>Brugerne / Kunderne</q>
+        <ul>
+            <li>vælger frit den dims de vil og kunne kommunikere med virksomheden på...tablets, desktop, superbrugere, skærmlæsere, *SE’ere etc.</li>
+            <li>får en genkendelig og fornuftig måde for de typer af applikationer hvor funktionaliteten er i centrum</li>
+            <li>anvender devices med touch, tastatur og pointer efter eget valg</li>
+        </ul>
+        <i>*SE: Search Engines</i>
+    </div>
+
+    <div id="whatever-happened-to-native-apps" class="step slide" data-x="3000" data-y="13500">
+        <q>Native Applications</q>
+        <p>De er stadigt i spil hvor produktet <strong>er</strong> applikationen:</p>
+        <p>
+            Community Models, MobilePay, Swipp, Spil, Gamifications involverende eks, NFC ol.
+        </p>
+        <i>forskellen på app'en "pungen" og MFSA-XPA netbanken "kontoen"</i>
+    </div>
+
+    <div id="pr-still-focuses-on-tablets" class="step" data-x="4000" data-y="12500" data-rotate="24" data-scale="2">
+        <p>Der tales meget om ...</p>
+        <h1>Mobile First</h1>
+        <h2>... Design bureauer synes at levere...</h2>
+        <h3>Tablet design</h3>
+        <p>måske fordi det minder mest om det vi er vant til, eller<br> at det er det design, vi bedst kan lide at vælge ud fra<span> ?</span></span></p>
+        <div>
+            <img src="mobile-vertical-empty.png"/>
+        </div>
+    </div>
+
+    <div id="we-r-building-mf-sa-xpa" class="step" data-x="4000" data-y="10500" data-rotate="24" data-scale="1">
+        <p>vi bygger MFSA-XPA applikationer</p>
+        <h1>NU!</h1>
+        <h2>og det er svært...</h2>
+        <h3>Men</h3>
+        <p><span>skal man kunne levere kosteffektiv software og betjene kunderne bedst mulig kan vi ikke anden vej,
+            vi bygger på HTML5, Angular, Bootstrap og ser på Material Design....</span></p>
+        <p><span>Material Design....tager udgangspunkt i hvad mennesker finder intuitivt....</span></p>
+    </div>
+
+    <div id="in-the-end-was-html5" class="step" data-x="6000" data-y="-4000" data-scale="6">
+        <span class="under-over-header">btw. dette... er en</span>
+        <h1>HTML5</h1>
+        <span class="footnote">præsentation... - "rdr" spørgsmål?</span>
+        <img src="html5_css3_logo_500w.png">
+    </div>
+
+    <div id="mobile-unfolded" class="step slide" data-x="5000" data-y="13500">
+        <p>Mobile</p>
+        <img style="padding-left: 20%;padding-top:5%" src="mobile-unfolded.png" />
+    </div>
+
+    <div id="mobile-closed" class="step slide" data-x="5000" data-y="14500">
+        <p>Mobile</p>
+        <img style="padding: 20%" src="mobile-closed.png" />
+    </div>
+
+
+    <div id="tablet-unfolded" class="step slide" data-x="6000" data-y="13500">
+        <p>Tablet</p>
+        <img style="padding:3%" src="tablet-unfolded.png" />
+    </div>
+
+    <div id="tablet-closed" class="step slide" data-x="6000" data-y="14500">
+        <p>Tablet</p>
+        <img style="padding: 4%" src="Tablet-closed.png" />
+    </div>
+
+    <div id="desktop-unfolded" class="step slide" data-x="7000" data-y="13500">
+        <p>Desktop</p>
+        <img style="padding: 3%" src="desktop-unfolded.png" />
+    </div>
+
+    <div id="desktop-closed" class="step slide" data-x="7000" data-y="14500">
+        <p>Desktop</p>
+        <img style="padding: 4%" src="desktop-closed.png" />
+    </div>
+
+    <div id="presentation-end" class="step slide" data-x="6000" data-y="10500">
+        <h1>The End</h1>
+        <h2>of <br><span style="padding-left: 2em"> Mobile First </span><br>
+            <span style="padding-left: 4em"> Single Application </span><br>
+            <span style="padding-left: 6em"><i>a</i>Cross platforms </span></h2>
+
+        <h3>Allan Højgaard Jensen</h3>
+        <h4>Nykre<span style="text-decoration: underline">dit</span><br></h4>
+    </p>
+    </div>
+
+    <div id="overview" class="step" data-x="3000" data-y="1500" data-scale="10">
+    </div>
+
+    </div>
+    <div class="hint">
+        <p>Brug space eller piletasterne for at navigere</p>
+    </div>
+    <script>
+    if ("ontouchstart" in document.documentElement) {
+        document.querySelector(".hint").innerHTML = "<p>Tap i siderne for at navigere frem og tilbage</p>";
+    }
+    </script>
+
+    <script src="impress.js"></script>
+    <script>impress().init();</script>
+
+    </body>
+</html>
+
+
+
